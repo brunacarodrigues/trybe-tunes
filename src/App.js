@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { Component } from 'react';
+import Content from './components/Content';
+import Header from './components/Header';
+import Sidebar from './components/Sidebar';
 
-class App extends React.Component {
+class App extends Component {
   render() {
-    return (<p>TrybeTunes</p>);
-    // iniciando o projeto
+    return (
+      <>
+        <Header />
+        <Sidebar />
+        <Content />
+      </>
+    );
   }
 }
 
