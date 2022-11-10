@@ -19,11 +19,10 @@ class Header extends Component {
     if (loading) return (<Loading />);
     return (
       <header data-testid="header-component">
-        {/* <div>{ loading && <Loading />}</div> pq não funciona? */}
         <p data-testid="header-user-name">{ name }</p>
-        <Link to="/search" data-testid="link-to-search" />
-        <Link to="/favorites" data-testid="link-to-favorites" />
-        <Link to="/profile" data-testid="link-to-profile" />
+        <Link to="/search" data-testid="link-to-search">Search</Link>
+        <Link to="/favorites" data-testid="link-to-favorites">Favorites</Link>
+        <Link to="/profile" data-testid="link-to-profile">Profile</Link>
       </header>
     );
   }
