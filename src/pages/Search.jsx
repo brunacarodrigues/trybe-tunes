@@ -83,14 +83,13 @@ class Search extends Component {
             {
               data.map((album) => (
                 <li key={ album.collectionId }>
-                  <p>{album.collectionName}</p>
-                  <img src={ album.artworkUrl100 } alt={ album.artistName } />
                   <Link
                     to={ `/album/${album.collectionId}` }
                     data-testid={ `link-to-album-${album.collectionId}` }
                   >
-                    <h3>{album.artistName}</h3>
+                    <p>{ album.collectionName }</p>
                   </Link>
+                  <img src={ album.artworkUrl100 } alt={ album.artistName } />
                 </li>
               ))
             }
